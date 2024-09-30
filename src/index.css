@@ -1,0 +1,146 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #87CEEB, #4682B4); /* Sky blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.weather-app {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.weather-header h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.weather-header input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 16px;
+}
+
+.weather-header button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.weather-header button:hover {
+  background-color: #1C86EE;
+}
+
+.weather-info {
+  margin-top: 25px;
+}
+
+.weather-location h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.weather-temp h1 {
+  margin: 10px 0;
+  font-size: 38px;
+}
+
+.weather-temp p {
+  margin: 0;
+  font-size: 16px;
+  color: #ddd;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .weather-header h1 {
+    font-size: 24px;
+  }
+
+  .weather-header input, .weather-header button {
+    font-size: 14px;
+  }
+
+  .weather-info {
+    margin-top: 20px;
+  }
+
+  .weather-location h2 {
+    font-size: 20px;
+  }
+
+  .weather-temp h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-app {
+    padding: 20px;
+  }
+
+  .weather-header h1 {
+    font-size: 22px;
+  }
+
+  .weather-header input, .weather-header button {
+    font-size: 12px;
+  }
+
+  .weather-info {
+    margin-top: 15px;
+  }
+
+  .weather-location h2 {
+    font-size: 18px;
+  }
+
+  .weather-temp h1 {
+    font-size: 30px;
+  }
+
+  .weather-temp p {
+    font-size: 14px;
+  }
+}
+
+
